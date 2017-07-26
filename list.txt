@@ -1,0 +1,5 @@
+https://site.com/
+https://site.com/2ndLevel
+https://site.com/some/long/example
+https://site.com/test/
+https://site.com/can/handle/up/to/1000/nodes

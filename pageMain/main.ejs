@@ -1,0 +1,69 @@
+ <!doctype html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/pageMain/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/node_modules/vis/dist/vis.js"></script>
+    <script src="/scripts/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/node_modules/vis/dist/vis.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <!--[if lt IE 9]> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="flowChart" class="header-select">FlowChart (Bubbled)</div>
+            <div id="dataTable" class="header-select">Data Table</div> 
+            <div class="header-select" id="fileStatus">
+                <p id="connection">File Disconnected</p>
+            </div>
+            <div id="whoami" class="header-select">whoami</div>       
+        </div> 
+    <div id="leftoverContainer">
+        <div id="mynetwork"></div>
+    </div>
+</div>
+<script type= "text/javascript" src="/pageMain/urlFormatter.js"></script>
+<script type="text/javascript" src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var socket = io();
+        function fileFound() {
+            document.getElementById('connection').innerHTML = "File Accessed";
+        }
+        socket.on('fileFound', function() {
+            fileFound();
+        });
+        socket.on('data', function (data) {
+            console.log(data);
+            var data = JSON.parse(data);
+            nodes.add(data.nodes);
+            edges.add(data.edges);
+        });
+    });
+
+</script>
+<script type="text/javascript"> 
+    var jsonTest = [];
+    // create an array with nodes 
+    var nodes = new vis.DataSet
+    // create an array with edges
+    var edges = new vis.DataSet 
+
+    // create a network
+    var container = document.getElementById('mynetwork');
+    var data = {
+    nodes: nodes,
+    edges: edges
+    };
+    var options = {};
+    var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>

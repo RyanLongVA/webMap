@@ -1,0 +1,35 @@
+		-- Need to change ID's so they're permanently unique --
+. Each COMPLETE URL is unique... let's see if we can use that as a base and finish
+https://apis.google.com/
+https://apis.google.com/
+https://apis.google.com/additnow
+https://apis.google.com/additnow/additnow.html
+https://apis.google.com/additnow/additnow.html?usegapi\u003dl
+https://apis.google.com/js
+https://apis.google.com/js/additnow.html
+https://apis.google.com/js/api.js
+https://apis.google.com/js/npc.js
+https://apis.google.com/test/
+https://apis.google.com/we/dem/bios/
+https://apis.google.com/static/testforsomething/
+
+New Product: 
+{	"nodes":[
+		{"id":"apis.google.com","label":"apis.google.com"},
+		{"id":"apis.google.com/additnow","label":"additnow"},
+		{"id":"apis.google.com/additnow/additnow.html","label":"additnow.html"},
+		{"id":"apis.google.com/additnow/additnow.html?usegapi\u003dl","label":"additnow.html?usegapi\u003dl"},
+		{"id":"apis.google.com/js","label":"js"},
+		{"id":"apis.google.com/js/additnow.html","label":"additnow.html"},
+		{"id":"apis.google.com/js/api.js","label":"api.js"},
+		{"id":"apis.google.com/js/npc.js","label":"npc.js"},
+		{"id":"apis.google.com/test","label":"test"},
+		{"id":"apis.google.com/we","label":"we"},
+		{"id":"apis.google.com/we/dem","label":"dem"},
+		{"id":"apis.google.com/we/dem/bios","label":"bios"},
+		{"id":"apis.google.com/static","label":"static"},
+		{"id":"apis.google.com/static/testforsomething","label":"testforsomething"}],
+Note: Some directories need to have parents created 
+	"edges":[
+// same concept as before -- once if finds a existing parents append the child node and the edge
+}
