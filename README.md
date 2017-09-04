@@ -8,10 +8,6 @@ some fun debugging and rewriting to get through, but the core concept is functio
 
 In this case, making a simple document in vim and start testing so you make note of odd behaviors, filters to hopefully bypass, or eventually, vulnerabilities, might be the most elegant solution. Still a collaborative platform that works cloud based for a offensive team and maps out a domain with it's endpoints to take live notes might be cool. Might help with the data organization and just general clarity of a operation.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ### Prerequisites
 
 Runs with 2 core installs and they're pretty easy to set up
