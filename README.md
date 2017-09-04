@@ -10,6 +10,8 @@ In this case, making a simple document in vim and start testing so you make note
 
 ### Prerequisites
 
+* A Linux Machine*
+
 Runs with 2 core installs and they're pretty easy to set up
 
 ```
