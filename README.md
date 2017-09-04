@@ -52,8 +52,9 @@ found a length of 1
 --changes.json was saved--
 ```
  
+Here's some typical visual output:
 
-![Here's some typical visual output:](https://static.wixstatic.com/media/b4cbd1_2650e1853b4748e497f71639b82e9088~mv2.png/v1/fill/w_484,h_272,al_c,usm_0.66_1.00_0.01/b4cbd1_2650e1853b4748e497f71639b82e9088~mv2.png)
+![](https://static.wixstatic.com/media/b4cbd1_2650e1853b4748e497f71639b82e9088~mv2.png/v1/fill/w_484,h_272,al_c,usm_0.66_1.00_0.01/b4cbd1_2650e1853b4748e497f71639b82e9088~mv2.png)
 
 
 ## Built With
