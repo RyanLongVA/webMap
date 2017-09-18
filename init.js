@@ -1,14 +1,8 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var fs = require('fs');
-var querystring = require('querystring');
+var express = require('express'); var bodyParser = require('body-parser'); var fs = require('fs'); var querystring = require('querystring');
 
-var app = require('express')();
-var server = require('http').createServer(app);
-var io = require('socket.io')(server);
+var app = require('express')(); var server = require('http').createServer(app); var io = require('socket.io')(server);
 
-var hostname = "127.0.0.2";
-var port = 3000;
+var hostname = "127.0.0.2"; var port = 3000;
 	
 var http = require('http').Server(app);
 //setup of the super basics
@@ -17,7 +11,12 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
 	app.use(express.static(__dirname));
-	res.render(__dirname + '/pageMain/main.ejs');
+	res.render(__dirname + '/pages/pageMain/main.ejs');
+});
+
+app.get('/datatable', function(req, res) {
+    app.use(express.static(__dirname));
+    res.render(__dirname + '/pages/datatable/main.ejs');
 });
 
 function formatList() {
