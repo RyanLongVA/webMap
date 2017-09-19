@@ -18,7 +18,7 @@
 <body>
     <div id="container">
         <div id="header">
-            <div id="flowChart" class="header-select">FlowChart (Bubbled)</div>
+            <div id="bubbleChart" class="header-select">FlowChart (Bubbled)</div>
             <div id="dataTable" class="header-select">Data Table</div> 
             <div class="header-select" id="fileStatus">
                 <p id="connection">File Disconnected</p>
@@ -31,8 +31,15 @@
 </div>
 <script type="text/javascript" src="/node_modules/socket.io-client/dist/socket.io.js"></script>
 <script type="text/javascript">
+    //setting redirects
+    $('#bubbleChart').click(function() {
+        window.location = '/';
+    });
+    $('#whoami').click(function() {
+        window.location = '/whoami';
+    });
     //$(function () {
-        var socket = io();
+    //  var socket = io();
         //function fileFound() {
         //    document.getElementById('connection').innerHTML = "File Accessed";
         //}

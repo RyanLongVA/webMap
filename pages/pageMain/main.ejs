@@ -32,6 +32,13 @@
 <script type= "text/javascript" src="/pages/pageMain/urlFormatter.js"></script>
 <script type="text/javascript" src="/node_modules/socket.io-client/dist/socket.io.js"></script>
 <script type="text/javascript">
+    //setting redirects
+    $('#dataTable').click(function() {
+        window.location = '/datatable';
+    });
+    $('#whoami').click(function() {
+        window.location = '/whoami';
+    });
     $(function () {
         var socket = io();
         function fileFound() {
