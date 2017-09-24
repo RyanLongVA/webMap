@@ -4,3 +4,4 @@ changes.json
 .gitignore
 test.db
 scripts/brutesubs
+*.pyc
