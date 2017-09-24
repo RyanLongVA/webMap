@@ -1,9 +1,0 @@
-https://apis.google.com/
-https://apis.google.com/
-https://apis.google.com/additnow
-https://apis.google.com/additnow/additnow.html
-https://apis.google.com/additnow/additnow.html?usegapi\u003dl
-https://apis.google.com/js
-https://apis.google.com/js/api.js
-https://apis.google.com/js/npc.js
-

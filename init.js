@@ -1,12 +1,27 @@
-var express = require('express'); var bodyParser = require('body-parser'); var fs = require('fs'); var querystring = require('querystring');
+const express = require('express'); const bodyParser = require('body-parser'); const fs = require('fs'); const querystring = require('querystring');
 
-var formatGraph = require(__dirname+'/test.js');
+const formatGraph = require(__dirname+'/test.js'); 
 
-var app = require('express')(); var server = require('http').createServer(app); var io = require('socket.io')(server);
+const sqlite3 = require('sqlite3').verbose();
 
-var hostname = "127.0.0.2"; var port = 3000;
+var db = new sqlite3.Database(__dirname+'/test.db', (err) => {
+    if (err) {
+        return console.err(err.message);
+    }
+    console.log('Connected to the in-memory SQlite database.');
+});
+db.close((err) => {
+    if (err) {
+        return console.error(err.message);
+    }
+    console.log('Close the database connection.');
+});
+
+const app = require('express')(); const server = require('http').createServer(app); const io = require('socket.io')(server);
+
+const hostname = "127.0.0.2"; const port = 3000;
 	
-var http = require('http').Server(app);
+const http = require('http').Server(app);
 //setup of the super basics
 app.set('view engine', 'ejs');
 

@@ -129,3 +129,16 @@ body {
     height: 100%;
     z-index: 1;     
 }
+
+
+#whoID {
+    color: #cecece;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif; 
+    letter-spacing:0.1em;
+    text-align:center; 
+    /* margin: 40px auto; */
+    text-transform: lowercase;
+    line-height: 145%;
+    font-size: 4em;
+    font-variant: small-caps;
+}

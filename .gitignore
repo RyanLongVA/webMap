@@ -2,3 +2,5 @@ node_modules
 data.json
 changes.json
 .gitignore
+test.db
+scripts/brutesubs
