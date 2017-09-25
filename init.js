@@ -1,6 +1,6 @@
 const express = require('express'); const bodyParser = require('body-parser'); const fs = require('fs'); const querystring = require('querystring');
 
-const formatGraph = require(__dirname+'/test.js'); 
+const formatGraph = require(__dirname+'/formatGraph.js'); 
 
 const sqlite3 = require('sqlite3').verbose();
 
