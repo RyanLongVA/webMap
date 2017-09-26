@@ -85,7 +85,6 @@ def main():
                 checkLiveWebApp_Domains(conn, sys.argv[1]+'_liveWebApp', b)
             else:
                 soleDomainAdd(conn, sys.argv[1]+'_liveWebApp', a)
-                pdb.set_trace()
         except Exception, e:
             print '[-]',a,'something went wrong:',e
             exit()
